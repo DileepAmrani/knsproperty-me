@@ -1,5 +1,6 @@
 "use client";
-import ReactPlayer from "react-player";
+import dynamic from 'next/dynamic';
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { usePathname } from "next/navigation";
 import Parallax from "@/blocks/animation/parallex";
 

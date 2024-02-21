@@ -13,8 +13,7 @@ const strapi = new Strapi({
   axiosOptions: {},
 });
 
-strapi.axios.defaults.headers.common['Authorization'] =
-  process.env.NEXT_PUBLIC_STRAPI_TOKEN || '';
+strapi.axios.defaults.headers.common['Authorization'] = process.env.NEXT_PUBLIC_STRAPI_TOKEN || '';
 const populate = ['*', 'Preview_Image', 'Images', 'agent', 'agent.Profile'];
 export default strapi;
 export { populate };

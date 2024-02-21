@@ -38,13 +38,15 @@ export default function RootLayout({
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
           }}
         />
+    
         <NewsLetterSection />
-        <Header />
 
+        <Header /> 
         {children}
         <Analytics />
         <Toaster />
-        <Footer />
+        <Footer /> 
+    
       </body>
     </html>
   );

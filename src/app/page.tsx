@@ -23,21 +23,22 @@ const Testimonals = dynamic(() => import("@/blocks/molecules/testimonals"), {
 const Trusted = dynamic(() => import("@/blocks/sections/trusted"), {
   loading: () => <Loader />, // Optional loading component
 });
+
 export default async function Home() {
   return (
     <main>
       <QuizComponent />
       <Trendings title="Properties for Sale" type="buy" />
-      <Trendings title="Properties for Rent" type="rent" />
-      <Service />
+      {/* <Trendings title="Properties for Rent" type="rent" /> */}
+      {/* <Service />
       <Testimonals />
       <Booking />
       <Trusted />
-      {/* <Blog /> */}
       <Features />
       <Featured />
       <Community />
-      <NewsletterSection />
+      <NewsletterSection /> */}
+      {/* <Blog /> */}
     </main>
   );
 }
